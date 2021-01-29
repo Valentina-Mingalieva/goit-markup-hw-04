@@ -169,8 +169,18 @@ address {
   background: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.general {
   display: flex;
   flex-direction: row;
+}
+
+/* footer-one container */
+
+.footer-one {
+  display: inline-block;
+  margin-right: 70px;
 }
 
 .logo-footer {
@@ -208,6 +218,8 @@ address {
   color: rgba(255, 255, 255, 0.6);
 }
 
+/* footer-two container*/
+
 .join-title {
   display: inline-block;
   margin-bottom: 20px;
@@ -217,47 +229,15 @@ address {
   text-transform: uppercase;
   color: var(--white-color);
 }
-/* 
-.member-links {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+
+.down {
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
-.member-links-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 44px;
-  height: 44px;
-  margin-right: 10px;
-  background-color: var(--white-color);
-  border-radius: 50%;
-}
-
-.member-links-item:last-child {
-  margin-right: 0;
-}
-
-.member-links-item:hover,
-.member-links-item:focus {
-  background-color: var(--accent-color);
-}
-
-.link-icon {
-  width: 20px;
-  height: 20px;
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  fill: #afb1b8;
-}
-
-.link-icon:hover,
-.link-icon:focus {
+.foot {
   fill: var(--white-color);
 }
- */
+
 /* index page */
 
 /* hero */
@@ -335,23 +315,22 @@ address {
   background-color: #f5f4fa;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
 }
 
-.antenna {
-  background-image: url("../index-images/icons/sprite.svg#icon-antenna");
+.antenna::before {
+  background-image: url("../index-images/icons/antenna.svg");
 }
 
-.clock {
-  background-image: url("../index-images/icons/sprite.svg#icon-clock");
+.clock::before {
+  background-image: url("../index-images/icons/clock.svg");
 }
 
-.diagram {
-  background-image: url("../index-images/icons/sprite.svg#icon-diagram");
+.diagram::before {
+  background-image: url("../index-images/icons/diagram.svg");
 }
 
-.astronaut {
-  background-image: url("../index-images/icons/sprite.svg#icon-astronaut");
+.astronaut::before {
+  background-image: url("../index-images/icons/astronaut.svg");
 }
 
 .list-item-title {
@@ -471,7 +450,6 @@ address {
   width: 44px;
   height: 44px;
   margin-right: 10px;
-  background-color: var(--white-color);
   border-radius: 50%;
 }
 
@@ -490,6 +468,9 @@ address {
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.main {
   fill: #afb1b8;
 }
 
