@@ -174,6 +174,7 @@ address {
 .general {
   display: flex;
   flex-direction: row;
+  align-items: baseline;
 }
 
 /* footer-one container */
@@ -441,12 +442,11 @@ address {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  list-style: none;
 }
 
 .member-links-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: block;
   width: 44px;
   height: 44px;
   margin-right: 10px;
@@ -457,25 +457,27 @@ address {
   margin-right: 0;
 }
 
-.member-links-item:hover,
-.member-links-item:focus {
-  background-color: var(--accent-color);
+.member-link {
+  width: inherit;
+  height: inherit;
+  border-radius: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: #afb1b8;
 }
 
 .link-icon {
-  width: 20px;
   height: 20px;
+  width: 20px;
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-.main {
-  fill: #afb1b8;
-}
-
-.link-icon:hover,
-.link-icon:focus {
+.member-link:hover,
+.member-link:focus {
+  background-color: var(--accent-color);
   fill: var(--white-color);
 }
 
@@ -491,15 +493,19 @@ address {
   list-style: none;
 }
 
+.client-item {
+  display: block;
+  margin-right: 30px;
+}
 .client-item-link {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 30px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   width: 170px;
   height: 90px;
+  fill: #afb1b8;
 }
 
 .client-item:last-child {
@@ -510,16 +516,11 @@ address {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  fill: #afb1b8;
 }
 
 .client-item-link:hover,
 .client-item-link:focus {
   border-color: var(--accent-color);
-}
-
-.client-item-logo:hover,
-.client-item-logo:focus {
   fill: var(--accent-color);
 }
 
@@ -583,7 +584,12 @@ address {
   border: 1px solid #eeeeee;
 }
 
-.projects-item:hover {
+.projects-link {
+  display: block;
+}
+
+.projects-link:hover,
+.projects-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
