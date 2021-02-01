@@ -496,20 +496,23 @@ address {
 .client-item {
   display: block;
   margin-right: 30px;
+  width: 170px;
+  height: 90px;
 }
+
+.client-item:last-child {
+  margin-right: 0;
+}
+
 .client-item-link {
+  width: inherit;
+  height: inherit;
   display: flex;
   justify-content: center;
   align-items: center;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  width: 170px;
-  height: 90px;
   fill: #afb1b8;
-}
-
-.client-item:last-child {
-  margin-right: 0;
 }
 
 .client-item-logo {
